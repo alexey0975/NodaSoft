@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание Nodasoft</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="popup">
+                <input type="radio" id="open" class="visually-hidden" name="popup" value="open">
+                <input type="radio" id="close" class="visually-hidden" name="popup" value="close">
+
+                <label for="open" class="popup__open">
+                    <span class="btn popup__open-btn">Open pop-up button</span>
+                </label>
+
+                <div class="popup__inner">
+                    <label for="close" class="popup__close-wrapper">
+                        <span class="btn popup__close-btn">X</span>
+                    </label>
+                    <div>Pop-up</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="section grid">
+               <div class="grid__el"></div>
+               <div class="grid__el"></div>
+               <div class="grid__el"></div>
+               <div class="grid__el"></div>
+               <div class="grid__el"></div>
+            </section>
+
+            <section class="section flex">
+                <div class="flex__el"></div>
+                <div class="flex__el"></div>
+                <div class="flex__el"></div>
+                <div class="flex__el"></div>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
