@@ -1,6 +1,6 @@
 # NodaSoft
 Test task from NodaSoft
 
-## this is a statig page
+## This is a static page
 
-Еo view it, download the repository and run the file index.html, or go [here](https://alexey0975.github.io/NodaSoft/)
+To view it, download the repository and run index.html, or go [here](https://alexey0975.github.io/NodaSoft/)
