@@ -47,7 +47,7 @@ body {
     transition: background-color .3s linear;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover {
     background-color: #0D89B0;
 }
 
@@ -86,12 +86,29 @@ body {
     line-height: 23px;
 }
 
+[value='close'] {
+    display: none;
+}
+
 [value='open']:checked ~ .popup__inner {
     display: flex;
 }
 
+[value='open']:checked ~ [value='close'] {
+    display: inline-block;
+}
+
+
 [value='close']:checked ~ .popup__inner {
     display: none;
+}
+
+[value='open']:focus ~ .popup__open-wrapper > .btn {
+    background-color: #0D89B0;
+}
+
+[value='close']:focus ~ .popup__close-wrapper > .btn {
+    background-color: #0D89B0;
 }
 
 .header {
@@ -117,7 +134,7 @@ body {
 
 .grid__el {
     position: relative;
-    height: 198px;
+    min-height: 198px;
     background-color: #8AD191;
     font-size: 53px;
     line-height: 62px;
